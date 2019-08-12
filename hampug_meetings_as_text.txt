@@ -1,0 +1,1627 @@
+
+***** Meeting: 1 *****
+
+0. 2014-02-24
+1. 1
+2. Initial Meeting of Hamilton Python User Group - HamPUG
+3. The meeting was held a Waikato University Room MS4.G.02.
+We discussed the objectives of the HamPUG group and possible content of presentations to be delivered at future meetings.
+
+***** Meetup: 1 *****
+
+No meetup data for this meeting
+
+================================================================================
+
+***** Meeting: 2 *****
+
+0. 2014-03-10
+1. 2
+2. Regular Meeting of HamPUG
+3. Established that HamPUG monthly meetings would be on the second Monday of the month starting at 7pm.
+There would not be any meeting for the month of January.
+4. No material presented at this meeting was provided for uploading to this github repository.
+
+***** Meetup: 2 *****
+
+No meetup data for this meeting
+
+================================================================================
+
+***** Meeting: 3 *****
+
+0. 2014-04-14
+1. 3
+2. Introduction
+3. Yesterday I did a talk on using Python to scrape all the song lyrics from a particular artist (from lyricsfreak.com) and then create a word cloud from all those lyrics using either using Wordle or using R's wordcloud package. The idea was to get a visual representation of the words that were said the most by a particular band or artist.
+4. The two main methods for doing this were through geturl() and getbetween(). geturl() is self-explanatory, and getbetween() allows us to find all strings that are in between two strings, for a particular body of text. So we use this method to basically wrangle data out of the HTML. As I mentioned in the talk, this way of doing things is kind of crude - it's good for quick one-offs or if you don't care about anything apart from getting the data. But there are nicer ways of doing this, such as using BeautifulSoup where you can navigate the DOM of the HTML. Hell, I should probably use that more often too!
+5. As mentioned at the start, we used both Wordle and R to generate our wordclouds. Wordle makes nicer wordclouds but it may be less accessible from a programmatic standpoint. R makes reasonably good looking wordclouds but it involves a lot of fiddling with parameters!
+6. Usage
+7. python get.py > output/out.txt
+
+8. Note that there is a boolean flag in the script called ONLINE - if it's set to true, then it will download the .html files (that correspond to lyrics from each song) and save them to a folder called saved in the same directory as the script. Otherwise if the boolean is set to false it will assume you already have the .html files in that folder and then do everything locally. I have also made other improvements to the script since the presentation, such as having the script create the output directory for you if it doesn't exist, etc.
+9. Then you can copy and paste the contents of out.txt into Wordle or use the R script create-cloud.R (if you know R!).
+10. Useful links
+11. 
+PDF printer for extracting Wordle clouds (Ubuntu)
+BeautifulSoup
+
+sudo pip install BeautifulSoup
+
+
+R wordcloud library
+
+
+***** Meetup: 3 *****
+
+No meetup data for this meeting
+
+================================================================================
+
+***** Meeting: 4 *****
+
+0. 2014-05-12
+1. 4
+2. Presentation on IDLE.
+3. IDLE is the Integrated DeveLopment Environment for Python. It is normally included with a Python distribution.
+4. The file IDLE presentation.odp is the slide show for the presentation delivered by Ian Stewart.
+
+***** Meetup: 4 *****
+
+No meetup data for this meeting
+
+================================================================================
+
+***** Meeting: 5 *****
+
+0. 2014-06-09
+1. 5
+2. Python Integrated Development Environment Presentations
+3. Spyder
+4. The sub-folder spyderlib contains a README.md and a screenshot.png file for providing an overview of the Spyder IDE.
+5. Eric5 IDE for Python - A guide to creating your first graphical application
+6. The file Eric Circle Presentation v3.odp is the slide show presented by Ian Stewart.
+7. The file Eric Circle Presentation - Code.tar.gz contains all the files that are discussed in the presentation.
+
+***** Meetup: 5 *****
+
+url ID: 184039822
+Hamilton Python Meetup
+MS4.G.02
+2014-06-09 7PM
+We continue with our journey on exploring editors and IDEs that can be used for Python development: Ninja IDE, Spyderlib, Cat, Komodo, Textmate, Sublime, Eric.
+Furthermore, Grace will be talking about the most common mistakes that people make when developing with Python.
+
+================================================================================
+
+***** Meeting: 6 *****
+
+0. 2014-07-14
+1. 6
+2. Observing times taken when looping
+3. The file Looping presentation.odp is a brief slide show by Ian Stewart that highlights
+differing times taken when Python programs perform loops.
+
+***** Meetup: 6 *****
+
+url ID: 188129822
+Hamilton Python Meetup
+MS4.G.02
+2014-07-14 7PM
+Despite being an easy to learn programming language, there are some common pitfalls when switching over to Python from another programming language or starting from scratch with programming. Grace will be talking about the 10 most common mistakes that people make when developing with Python.
+
+================================================================================
+
+***** Meeting: 7 *****
+
+0. 2014-08-18
+1. 7
+2. Virtualenv and Setuptool
+3. Peter Reutemann presented  virtualenv and using the setuptool python module.
+4. The file virtualenv_and_setuptools.odp is Peter's slide show. While PyFunk.tar.gz
+is a zip of the files involved his setuptools presentation.
+5. Update Note as of 2019:
+6. venv — Creation of virtual environments became new in version 3.3 (September 2012).
+The venv module provides support for creating lightweight “virtual environments” with their own
+site directories, optionally isolated from system site directories.
+7. The pyvenv script has been deprecated as of Python 3.6 (December 2016) in favor of using
+python3 -m venv to help prevent any potential confusion as to which Python interpreter
+a virtual environment will be based on.
+8. Deprecated since version 3.6: pyvenv was the recommended tool for creating virtual
+environments for Python 3.3 and 3.4, and is deprecated in Python 3.6.
+9. See: https://docs.python.org/3/library/venv.html
+
+***** Meetup: 7 *****
+
+url ID: 191060772
+Hamilton Python Meetup
+MS4.G.02
+2014-08-18 7PM
+Writing Python scripts is only the first step in developing a useful piece of software. Making the software available to other users via installers is a bit more challenging. In this meeting Peter Reutemann will discuss how to use setuptools for creating installers and virtualenv for testing them.
+
+Furthermore, Ian Stewart will discuss the Anjuta IDE, which uses the Gnome libraries (Glib, GObject, GTK+, GBuilder, ...) and has built-in support for Glade as well.
+
+================================================================================
+
+***** Meeting: 8 *****
+
+0. 2014-09-08
+1. 8
+2. No presentation material availble for uploading.
+
+***** Meetup: 8 *****
+
+url ID: 205610462
+Hamilton Python Meetup
+MS4.G.02
+2014-09-08 7PM
+Chris Beckham will show how to run Python scripts on an Android phone.
+Lawrence D'Oliveiro will demonstrate how to script the 3D animation software Blender using Python.
+
+================================================================================
+
+***** Meeting: 9 *****
+
+0. 2014-10-13
+1. 9
+2. Do It Yourself Home Monitoring
+3. Peter Reutemann presented on Do It Yourself Home Monitoring. See the README in the diy_home_monitoring.
+4. The Gooey module
+5. See the README in the sub-directory gooey for presentation material details on the gooey module.
+
+***** Meetup: 9 *****
+
+url ID: 207445012
+Hamilton Python Meetup
+MS4.G.02
+2014-10-13 7PM
+Chris Beckham: Gooey (https://github.com/chriskiehl/Gooey) is a fairly recent project written in Python that allows one to convert easily console applications to GUI ones with just one extra line of code. This gives command-line loving developers (i.e. Unix philosophers) a way to cater their programs to those that are more comfortable with GUIs without having to do a bunch more work.
+
+Peter Reutemann: DIY home monitoring with Wifi webcam(s) and a few lines of Python code.
+
+================================================================================
+
+***** Meeting: 10 *****
+
+0. 2014-11-10
+1. 10
+2. No Presentation material uploaded.
+
+***** Meetup: 10 *****
+
+url ID: 217865632
+Hamilton Python Meetup
+MS4.G.02
+2014-11-10 7PM
+No fixed agenda for this meeting, just a social gathering. We'll chat about all things Python and may have some adhoc presentations.
+
+================================================================================
+
+***** Meeting: 11 *****
+
+0. 2014-12-08
+1. 11
+2. How to use data mining on publicly available data.
+3. Peter Reutemann demonstrated how the python-weka-wrapper library enables you to use
+the WEKA machine learning workbench (written in Java) in a Python environment.
+4. See the README in the sub-directory datamining
+5. Hangman
+6. Ian Stewart wrote python scripts to review the Linux English dictionary and strip
+out the words that are not suitable when playing the game hangman.
+See the sub-directory hangman.
+
+***** Meetup: 11 *****
+
+url ID: 219010290
+Hamilton Python Meetup
+MS4.G.02
+2014-12-08 7PM
+• Peter Reutemann (http://www.cms.waikato.ac.nz/~fracpete/): let's do some data mining (https://github.com/fracpete/python-weka-wrapper)!
+
+• Ian Stewart: The use of python list[]'s to manipulate widgets in a Tkinter and a PyQt5 GUI environment.
+
+================================================================================
+
+***** Meeting: 12 *****
+
+0. 2015-02-09
+1. 12
+2. Python frameworks for automated testing
+3. Peter Reutemann
+4. Peter presented on various python frameworks for automated testing.
+The file Testing.otp is the slide show of Peter's presentation.
+
+***** Meetup: 12 *****
+
+url ID: 219969265
+Hamilton Python Meetup
+MS4.G.02
+2015-02-09 7PM
+Testing, testing, testing. Peter Reutemann (http://www.cms.waikato.ac.nz/~fracpete/) will give a short intro to automated tests in Python and what frameworks can be used.
+
+The meeting is sponsored by the Computer Science Department (http://www.cs.waikato.ac.nz/) of the University of Waikato (http://www.waikato.ac.nz/).
+
+================================================================================
+
+***** Meeting: 13 *****
+
+0. 2015-03-09
+1. 13
+2. Introduction to Python
+3. Lawrence D'Oliveiro presented an Introduction to Python.
+The notes for the presentation are in the file notes.txt.
+
+***** Meetup: 13 *****
+
+url ID: 219969369
+Hamilton Python Meetup
+MS4.G.02
+2015-03-09 7PM
+Lawrence D'Oliveiro will give an introduction to the Python programming language. Ideal for people who know a bit of programming, but want to know what Python is all about and why people rave about it.
+
+The meeting is sponsored by the Computer Science Department (http://www.cs.waikato.ac.nz/) of the University of Waikato (http://www.waikato.ac.nz/).
+
+================================================================================
+
+***** Meeting: 14 *****
+
+0. 2015-04-13
+1. 14
+2. Using Python as the macro script with Libreoffice.
+3. Libre Office distribution includes the BASIC scripting language for use with
+Libre Office applications. Ian Stewart presented the use of Python as an
+alternative scripting language for Libre Office.
+4. Ian also provided code that converts an application that uses python script in
+the User library, to having the python script embedded in the Libre Office
+document file.
+5. See the sub-directory libreoffice for Ian's presentation material.
+6. Collections module and defaultdict
+7. Peter Reutemann presented from collections import deque, defaultdict
+8. Peter's presentation includes two ipynb files demo-networkx.ipynb and
+demo.ipynb.
+9. To launch Binder website to run the Jupyter server for the file
+demo-networkx.ipynb click on the following icon...
+10. 
+11. To launch Binder website to run the Jupyter server for the file
+demo.ipynb click on the following icon...
+12. 
+
+***** Meetup: 14 *****
+
+url ID: 221555770
+Hamilton Python Meetup
+MS4.G.02
+2015-05-11 7PM
+This meeting is all about plotting and drawing.
+
+Chris O'Halloran will talk about using pyqtgraph (http://www.pyqtgraph.org/),
+Peter Reutemann will introduce matplotlib (http://matplotlib.org/) and Ian Stewart will show how to use Python for manipulating LibreOffice Draw (https://www.libreoffice.org/discover/draw/).
+
+The meeting is sponsored by the Computer Science Department (http://www.cs.waikato.ac.nz/) of the University of Waikato (http://www.waikato.ac.nz/).
+
+================================================================================
+
+***** Meeting: 15 *****
+
+0. 2015-05-11
+1. 15
+2. Plots and Graphs in Python
+3. matplotlib
+4. Peter Reutemann presented some example scripts for generating plots using matplotlib
+See the sub-directory matplotlib.
+5. Libreoffice House
+6. Ian Stewart presented on how to draw a house in LibreOffice Impress using Python. See the sub-directory libreoffice
+
+***** Meetup: 15 *****
+
+url ID: 221556439
+Hamilton Python Meetup
+MS4.G.02
+2015-04-13 7PM
+Ian Stewart will demonstrate how to use Python from within LibreOffice (http://www.libreoffice.org/).
+
+Yindong Xiao will introduce the collections (https://docs.python.org/2/library/collections.html) Python standard library using the Tulip (http://tulip.labri.fr/Documentation/current/tulip-python/html/index.html) environment.
+
+================================================================================
+
+***** Meeting: 16 *****
+
+0. 2015-06-08
+1. 16
+2. Meeting at The Cook
+3. No material was uploaded.
+
+***** Meetup: 16 *****
+
+url ID: 222463877
+Hamilton Python Meetup
+MS4.G.02
+2015-07-13 7PM
+Brian Hardyment will show you how to use tkinter (http://en.wikipedia.org/wiki/Tkinter) for developing graphical user interfaces in Python. Why tkinter? It is part of the Python installation on Windows and Mac, requiring no further libraries to be installed. Also, the latest iterations of tkinter provide native widgets, making your Python application look like an actual native application.
+
+================================================================================
+
+***** Meeting: 17 *****
+
+0. 2015-07-13
+1. 17
+2. Options in the Tkinter GUI.
+3. Ian Stewart presented features of Tkinter. The themed toolkit and the options available with messagebox.
+4. See the files in the sub-directory ian.
+
+***** Meetup: 17 *****
+
+url ID: 222854991
+Hamilton Python Meetup
+The Cook Cafe and Bar
+2015-06-08 7PM
+Let's go and chat over a drink at The Cook (upstairs). The odd laptop might appear and Python code written. If you are new to Python, this is the perfect opportunity to meet some locals that are passionate about it.
+
+================================================================================
+
+***** Meeting: 18 *****
+
+0. 2015-08-10
+1. 18
+2. No presentation material available
+
+***** Meetup: 18 *****
+
+url ID: 223956800
+Hamilton Python Meetup
+MS4.G.02
+2015-08-10 7PM
+William Mckee will demo the Python library Dominate (https://github.com/Knio/dominate). It allows you to write Python code to generate HTML. Example will be given with his Ministry of Education (from recent GovHack (http://govhack.org.nz/) held at Waikato University (http://govhack.org.nz/govhack-hamilton/)) and GetsDrawn scripts. Other libraries used will include requests, beautifulsoup4, json and praw (python reddit wrapper).
+
+================================================================================
+
+***** Meeting: 19 *****
+
+0. 2015-09-14
+1. 19
+2. Demostration of two python programs
+3. Ian Stewart demonstrated two of his python programs. The programs are the
+files loadscript.py and cadence_hampug_demo.py.
+4. loadscript.py
+5. loadscript.py is designed to load a python script file or bash script file
+from a current development folder and place it into /usr/local/bin/ folder.
+The files name will be truncated. For example, myprog_v3.py will become
+myprog.
+6. The permissions on the file copied to /usr/local/bin are modified, and the file
+is checked to ensure it has a shebang in the first line. E.g.
+7. #!/usr/bin/env python3
+8. The script may now be executed at the command line by just typing the file name
+and providing any input options or arguments the program requires. E.g.
+9. $ myprog -i test.txt
+10. Please see the
+11. $ loadscript --documentation
+
+12. and the
+13. $ loadscript --help 
+
+14. for more details.
+15. cadence_hampug_demo.py
+16. cadence is a command line program to model a bikes pedalling cadence to its
+speed depending on what gears are used.
+17. cadence features the generic function query() to solicit input from the User.
+The query() function ensures the User types on the keyboard a response that is
+acceptable to the desired data type of either string, boolean, integer or
+floating point.
+18. Type
+19. $ cadence_hampug_demo.py --help
+20. for more information.
+
+***** Meetup: 19 *****
+
+url ID: 225102434
+Hamilton Python Meetup
+MS4.G.02
+2015-09-14 7PM
+William McKee will talk about his Kiwi PyCon (http://lanyrd.com/2015/kiwi-pycon/) experience in Christchurch.
+
+Ian Stewart will present his application that connects to Skype (http://www.skype.com/) using the module Skype4Py (https://github.com/awahlig/skype4py) and uses espeak (http://espeak.sourceforge.net/) to allow visually impaired people to use the voice-call functions of Skype. Verne Pavreal, who is blind, will demonstrate this application together with Ian.
+
+================================================================================
+
+***** Meeting: 20 *****
+
+0. 2015-10-12
+1. 20
+2. Command Line Parsing Frameworks
+3. Brief presentations were delivered on some of the command line parsing
+Python modules.
+4. begin - Command line programs for busy developers
+plac - The smartest command line arguments parser in the world
+sys.argv - Most command line arguments parsers initially use
+5. Also, in the form of a quiz, there is a presentation is designed to
+highlight the number of lines of code involved in using sys.argv, argparse, and plac.
+6. Refer to the sub-directories: begins, plac, quiz, and sys.argv.
+
+***** Meetup: 20 *****
+
+url ID: 225527752
+Hamilton Python Meetup
+MS4.G.02
+2015-10-12 7PM
+Lightning talks on command-line parsing frameworks.
+
+Currently lined up:
+
+• Ian Stewart: sys.argv
+
+• Luke Jansch: argparse (https://docs.python.org/3/library/argparse.html#module-argparse)
+
+• Jeremy Stott: docopt (https://github.com/docopt/docopt)
+
+• Ian Stewart: plac (https://pypi.python.org/pypi/plac)
+
+• Peter Reutemann: begins (https://pypi.python.org/pypi/begins)
+
+Please refer to this post (https://groups.google.com/forum/#!topic/nzpug/1mcEMVvfqKE) on the NZPUG mailing list and contact me if
+
+================================================================================
+
+***** Meeting: 21 *****
+
+0. 2015-11-09
+1. 21
+2. Pelican is a static site generator
+3. Pelican is a static site generator, written in Python. Refer to the sub-directory pelican.
+4. pyudev module
+5. Detecting Insertion and Removal of a USB device using pyudev.
+6. Ian Stewart presented an introduction to the effects of inserting and removing
+a USB device. The Pyudev module is used to monitor and callback on the insertion
+and removal of a USB device. Refer to the sub-directory pyudev.
+
+***** Meetup: 21 *****
+
+url ID: 226406966
+Hamilton Python Meetup
+MS4.G.02
+2015-11-09 7PM
+Currently lined up:
+
+• William Mckee will demo Nikola (https://getnikola.com/), a Static Site Generator
+
+• Peter Reutemann will give a short intro to the Pelican (http://blog.getpelican.com/) Static Site Generator
+
+• Ian Stewart - Using Python to communicate with USB devices or What I do NOT know about USB devices!
+
+If you'd like to give a short demo or talk about a Python-related topic (eg site generator, command-line parser are current topics), then please contact the organizer (Peter).
+
+================================================================================
+
+***** Meeting: 22 *****
+
+0. 2015-12-14
+1. 22
+2. RPi.GPIO
+3. Ian Stewart presented the RPi.GPIO python module.
+4. The Raspberry Pi computer has a connector to provide physical access to connect
+LED's and switches, etc., to the General Purpose Input and Output (GPIO)
+signals. The python module RPi.GPIO allows a selection of pins on this
+connector to be configured to receive input, or generate output signals.
+RPi.GPIO also supports providing a Pulse Width Modulation (PWM) output signal.
+5. The Raspian distro provides a Debian based GUI desktop environment for the
+Raspberry Pi. Included in Raspian are Python 2 & 3, the tkinter/ttk GUI tool
+kit, and the Integrated Development Environment IDLE. Raspian also includes the
+python module RPi.GPIO.
+6. As well as the slide show presentation material, there are 9 demonstration
+programs to highlight features of the RPi.GPIO module. Most of these programs
+utilize the tkinter GUI and use the themed tool kit (ttk). A brief summary of
+these programs is as follows:
+7. 
+01_demo_get_pin.py – Display P1 Connector pins.
+02_demo_rpi_package.py – Display information on the python Rpi.GPIO package.
+03_demo_ttk_1_led.py – Using the tkinter GUI, turn on and off a LED.
+04_demo_ttk_4_led_counter_simple.py – 4 x LED's counting in binary from 0 to 15.
+05_demo_ttk_4_led_counter_complex.py - 4 x LED's counting in binary. Uses [::-1]
+06_demo_ttk_4_led_counter_inc_dec.py – Use tkinker GUI to increment/decrement counter.
+07_demo_ttk_2_switches.py – Receive input from two switches. NB: Run as sudo.
+08_demo_ttk_pwm_linear.py – Pulse Width Modulation with a linear frequency scale.
+09_demo_ttk_pwm_exponential.py - Pulse Width Modulation with an exponential scale.
+
+
+***** Meetup: 22 *****
+
+url ID: 227301648
+Hamilton Python Meetup
+MS4.G.02
+2015-12-14 7PM
+Ian Stewart: Use of the Python RPi.GPIO (https://pypi.python.org/pypi/RPi.GPIO) module to control the General Purpose Input/Output ports of the Broadcom chip on a Raspberry Pi. This includes using a tkinter GUI to allow dynamic adjustment of frequency and duty cycle of the RPi.GPIO modules pulse width modulation feature.
+
+================================================================================
+
+***** Meeting: 23 *****
+
+0. 2016-02-08/
+1. 23
+2. IPython
+3. Lawrence D'Oliveiro delivered a presentation on IPython. Lawrence provided two ipynb files,
+Exponential Series.ipynb and Solid Angle Of A Circle.ipynb.
+4. The file Exponential Series.ipynb may be launched using the binder Jupyter kernel by
+clicking on the following icon...
+5. 
+6. The file Exponential Series v4.ipynb may be launched using the binder Jupyter kernel by
+clicking on the following icon...
+7. 
+8. The file Solid Angle Of A Circle.ipynb may be launched using the binder Jupyter kernel
+by clicking on the following icon...
+9. 
+10. The file Solid Angle Of A Circle v4.ipynb may be launched using the binder Jupyter kernel
+by clicking on the following icon...
+11. 
+12. Presentation Notes
+13. IPython is an interactive shell, originally for Python. Though it is now being generalized, via the Jupyter project, to handle other languages on an equal basis.
+14. IPython interfaces to the language implementation via its own “kernel” process. Separate from the kernel is the front end, of which there are three: one based on a character terminal, one built with the Qt GUI toolkit, and the web-based notebook interface. Of the three, the notebook interface is the most powerful, it’s the only one I have much experience with, and it is the one I will talk about here. If you’ve used Mathematica, the notebook concept will be very familiar.
+15. The kernel process maintains a context for script programs that is preserved for as long as the kernel remains running. Thus, you can feed a command to define a variable or open a file, and then later send another command to access that variable or do something with that file. When the kernel is terminated, all such context is lost.
+16. The notebook server is a custom web server, so the user interface can be provided via any modern web browser. A notebook file (extension “.ipynb”) is actually a text file in JSON format. Its content is a sequence of cells. Each cell can contain program-language text (in Python, in this case) to be executed by the kernel, or text that is only to be read by the user of the notebook, which can be nicely formatted using Markdown markup. The latter text can also include mathematical formulas in the appropriate subset of LATEX markup, implemented by the MathJax library, which is written in JavaScript and does all its actual rendering in the web browser.
+17. Program cells can generate text or graphical output, which is displayed immediately following the cell when it is executed. They can also generate Markdown or mathematical markup by using the appropriate API calls, allowing the convenient display of dynamically-generated formatted text or mathematical formulas as well as more general graphics.
+18. Not only that, but program code can also define simple interactive “widgets” (e.g. sliders, text-input fields) to create a very basic custom GUI that allows the user to interact with the cell output.
+19. The notebook file saves the original cell content, along with the formatted representation of non-program cells. Remember that the in-memory program context (variables, open files etc) lives only in the kernel process, not the notebook front-end.
+20. There is no command that simply saves the current notebook under its current name. There is a “Save and Checkpoint” command, which saves the notebook and also makes a time-stamped “checkpoint” copy in the “.ipynb_checkpoints” subdirectory. Also the notebooks is periodically autosaved, at an interval that defaults to 2 minutes. Alternatively, you can simply close the notebook window/tab; if there are unsaved changes, you get prompted whether you really want to leave the page. Regardless of what you select here, the notebook will be saved.
+21. What about security? First of all, a notebook can execute arbitrary code. The notebook server, and the kernel, make no attempt to constrain the kinds of programs that can be executed. The assumption is that these are running on machines under the user’s control, executing code specified by the user. Therefore it is not their job to limit what the user can do.
+22. There is another issue, that of receiving a notebook from another (possibly untrusted) source and executing arbitrary code from that. IPython doesn’t prevent you from doing this. But it will not automatically execute JavaScript from cached cell output, unless the notebook signature is verified against a key known to the user https://ipython.org/ipython-doc/3/notebook/security.html. Normally each user generates their own key, but it is possible to share keys with trusted colleagues.
+23. IPython lets you set up multiple profiles, and easily switch between them. These let you create different sets of custom default settings for different usages. Profiles can also be used to isolate trust between different groups that you work with.
+
+***** Meetup: 23 *****
+
+url ID: 228357979
+Hamilton Python Meetup
+MS4.G.02
+2016-02-08 7PM
+Lawrence D'Oliveiro is demoing interactive graphics using IPython Notebook.
+
+William McKee is demoing Jupyter Notebook/Jupyterhub and how it can be used with Nikola.
+
+Discussion of March meeting, which will be run as an introduction to Python (eg Python basics, teaser on GUI and web development).
+
+We have plenty of space for lightning talks! I you have come across a cool library or done something cool, hacky with Python, then this is your chance to give a short demo/presentation of what you have
+
+================================================================================
+
+***** Meeting: 24 *****
+
+0. 2016-03-14
+1. 24
+2. An Introduction to Python.
+3. Multiple presentations were delivered to show the features Python and its capabilities.
+4. Presenters were: William Mckee, Lawrence D'Oliveiro and Ian Stewart.
+5. The following presentation were delivered:
+6. An overview of Python
+7. Ian Stewart presented this overview of Python, its history and popularity.
+Refer to the file: /irsbugs/Introduction to Python - Overall Presentation .odp. Slides 1 to 11.
+8. Python on a Raspberry Pi
+9. Using Python on a Raspberry Pi to control GPIO ports with LED's attached.
+Refer to the file: /irsbugs/Introduction to Python - Overall Presentation .odp. Slides 13 to 17
+10. Two python program running on the RPi were demonstrated. These programs are
+/irsbugs/06_demo_ttk_4_led_counter_inc_dec.py and /irsbugs/09_demo_ttk_pwm_exponential.py.
+11. Installing Python3
+12. Installing Python3 and looking at: help(), builtins, pydoc3, PIPy, IPython/Jupyter.
+Refer to the file: /irsbugs/Introduction to Python - Overall Presentation .odp. Slides 22 to 33
+13. Python Universal Network Object (uno) Bridge
+14. Demonstation of a python script using the python Universal Network Object (uno) Bridge module so that
+a python script will generate a LibreOffice Draw document. See slides 38 and 39.
+Refer to the file: /irsbugs/pythonhouse-2016-03-14.py.
+15. Nikola static web-site generator
+16. William Mckee demonstated Nikola, a static web-site generator, that is written in python.
+Refer to the file: /irsbugs/nikola-march.svg.
+17. Introduction to Programming in Python
+18. Lawrence D'Oliveiro presented an Introduction to Programming in Python.
+Refer to the file: 	/ldo/Python Intro Talk.ipynb.
+19. The ipynb presentation by Lawrence may be launched by binder by clicking on the icon below
+20. 
+21. The ipynb version 4 presentation by Lawrence may be launched by binder by clicking on the icon below
+22. 
+
+***** Meetup: 24 *****
+
+url ID: 228716393
+Hamilton Python Meetup
+MS4.G.02
+2016-03-14 7PM
+Our March meeting is aimed at people new to Python and ones that would like to find out more about the language.
+
+We will kick off the evening by demonstrating Python tools and applications:
+
+• William McKee will demonstrate Nikola (https://getnikola.com/), a static site generator written in Python, for generating great looking, mobile-friendly websites.
+
+• Ian Stewart and his Raspberry Pi (https://www.raspberrypi.org/) will show off Python's hardware side of things, bringing LEDs to light.
+
+Aft
+
+================================================================================
+
+***** Meeting: 25 *****
+
+0. 2016-04-11
+1. 25
+2. Python in the Digital Technologies subject at NZ secondary schools
+3. Ian Stewart presented examples of using python as part of the New Zealand
+Secondary Schools, Digital Technologies subject which is a component of
+the National Ceritificate of Educational Achievement (NCEA) levels 1 to 3.
+4. For the slide show refer to the file: /ncea presentation/Python for NCEA units.odp.
+5. Also included are a series of circle_x.py programs. These are to demonstrate
+levels of complexity in python programming techniques.
+6. The NCEA Level3 Digital Technologies Unit 91637 is titled Develop a complex
+computer program for a specified task.
+7. An example of a program that might meet this specification is the file
+/prime_number/prime_number_locater.py.
+8. There are also two other prime number locator programs which may be of
+interest prime_number_locater_minimal_recursion.py and prime_number_rabinmiller.py.
+
+***** Meetup: 25 *****
+
+url ID: 230234718
+Hamilton Python Meetup
+MS4.G.02
+2016-04-11 7PM
+Review some of the units of the Secondary School NCEA computing and digital technologies. For those that want to give it a try, the challenge for the next month will be to write a Python program that meets the specification and present their program at the May meeting
+
+================================================================================
+
+***** Meeting: 26 *****
+
+0. 2016-05-09
+1. 26
+2. Python 2.7 to Python 3
+3. Peter Reutemann provided a presentation on migrating Python 2.7 to Pythyon 3.
+4. His presentation includes the files /python2to3experiences/python2python3.pdf
+and /python2to3experiences/python2to3migration.md
+
+***** Meetup: 26 *****
+
+url ID: 230891995
+Hamilton Python Meetup
+MS4.G.02
+2016-05-09 7PM
+Presentation of programs that meet the secondary school NCEA specification.
+
+Experiences of migrating a Python 2.7 project to Python 3.x.
+
+================================================================================
+
+***** Meeting: 27 *****
+
+0. 2016-06-13
+1. 27
+2. Discussion of PyCon 2016 (https://www.youtube.com/channel/UCwTD5zJbsQGJN75MwbykYNw) talks, with William Mckee introducing:
+3. • Wendy Grus - When is it good to be bad? Web scraping and data analysis of NHL penalties.
+4. • A. Jesse Jiryu Davis - Write an Excellent Programming Blog.
+
+***** Meetup: 27 *****
+
+url ID: 231705578
+Hamilton Python Meetup
+MS4.G.02
+2016-06-13 7PM
+Discussion of PyCon 2016 (https://www.youtube.com/channel/UCwTD5zJbsQGJN75MwbykYNw) talks, with William Mckee introducing:
+
+• Wendy Grus - When is it good to be bad? Web scraping and data analysis of NHL penalties.
+
+• A. Jesse Jiryu Davis - Write an Excellent Programming Blog.
+
+================================================================================
+
+***** Meeting: 28 *****
+
+0. 2016-07-11
+1. 28
+2. Let's plan the August meeting, which will be once again an Introduction to Python.
+This will include distribution of flyers and other advertising, as well as topics
+to cover during the introduction evening.
+
+***** Meetup: 28 *****
+
+url ID: 232069960
+Hamilton Python Meetup
+MS4.G.02
+2016-07-11 7PM
+Let's plan the August meeting, which will be once again an Introduction to Python. This will include distribution of flyers and other advertising, as well as topics to cover during the introduction evening.
+
+================================================================================
+
+***** Meeting: 29 *****
+
+0. 2016-08-08
+1. 29
+2. Nikola
+3. Peter Reutemann delivered a presentation on Nikola static web-site generator.
+His slide show presentation is available as nikola.odp or nikola.pdf.
+4. Introduction to Python
+5. Lawrence D'Oliveiro presented an Introduction to Python. Refer to the ipynb file:
+/ldo/Python Intro Talk 1∕2.ipynb
+6. Click on the launch binder icon to launch the ipynb presentation using binder:
+7. 
+
+***** Meetup: 29 *****
+
+url ID: 232669230
+Hamilton Python Meetup
+MS4.G.02
+2016-08-08 7PM
+Our August meeting is aimed at people new to Python and ones that would like to find out more about the language.
+
+We will kick off the evening by demonstrating Python tools and applications:
+
+• Peter Reutemann will demonstrate Nikola (https://getnikola.com/), a static site generator written in Python, for generating great looking, mobile-friendly websites.
+
+• Ian Stewart and his Raspberry Pi (https://www.raspberrypi.org/) will show off Python's hardware side of things, bringing LEDs to light.
+
+
+
+================================================================================
+
+***** Meeting: 30 *****
+
+0. 2016-09-12
+1. 30
+2. Evolution of a Python program
+3. Ian Stewart delivered a presentation on the Art of Python. It demonstrates
+how a python program should have a good structure and how to evaluate the
+quality of a program. His slide presentation is /ian-python_art/art_of_python.opd
+4. Included with his presentation are 4 x circle.py programs of varying complexity.
+5. Tkinter template program
+6. Ian Stewart presented a code generator that will produce python3 tkinter GUI
+template programs. His slide show is the file
+/ian-tkinter_templates/Intro to tkinter generator.odp
+7. The presentation demonstrates the creation of a template with 3 x frames, 1 x entry box, 5 x static labels, and 4 x labels with their textvariable linked to a tkinter string variable.
+8. Example code is included as the files circle.py and circle_initial.py
+9. Introduction to Python - Part 2
+10. Lawrence D'Oliveiro
+11. Last month Lawrence delivered the first part of his Introduction to Python. This month he continues to expand on the features of Python.
+12. Click on the launch binder icon to launch the ipynb presentation in binder...
+13. 
+
+***** Meetup: 30 *****
+
+url ID: 233693633
+Hamilton Python Meetup
+MS4.G.02
+2016-09-12 7PM
+Lawrence D'Oliveiro will continue with his Introduction to Python using Jupyter Notebook, covering topics such as:
+
+• Sets
+
+• Classes, including special method names
+
+• More looping fun: enumerate(), generator functions
+
+• A bit about reflection/RTTI (https://en.wikipedia.org/wiki/Run-time_type_information)
+
+• "any" and "all" built-in functions
+
+Ian Stewart will show the Evolution of a Python Program, of how to turn a hack into a more standardized, pythonistic program. He will also introduce you
+
+================================================================================
+
+***** Meeting: 31 *****
+
+0. 2016-10-10
+1. 31
+2. Web2py - Website generator
+3. Ian Stewart delivered a web2py presentation. His slide show is the
+file web2py_presentation.odp.
+
+***** Meetup: 31 *****
+
+url ID: 234493057
+Hamilton Python Meetup
+MS4.G.02
+2016-10-10 7PM
+Postponed due to sickness: William Mckee is talking about the Tesla Model S JSON API (http://docs.timdorr.apiary.io/) and the Vehicle Information Access API (https://www.w3.org/TR/vehicle-information-api/) - configuring and
+extending with Python.
+
+web2py (http://www.web2py.com/) is a free open source full-stack framework for rapid development of fast, scalable, secure and portable database-driven web-based applications. Written and programmable in Python. Ian Stewart will provide an update on do
+
+================================================================================
+
+***** Meeting: 32 *****
+
+0. 2016-11-14
+1. 32
+2. Flask - Website Framework
+3. William Mckee delivered a presentation on the Flask web-site generator.
+Refer to the file: /flask/flask.svg
+4. Tesla
+5. William Mckee delivered a presentation on accessing the API of the Tesla car.
+Refer to the file: /tesla/teslaapi.svg
+6. Modifying a Web2py Web-site
+7. The http://hampug.pythonanywhere.com/ web-site was created using web2py framework.
+Peter Reutemann modified the web-site so that it would pull data about the
+date of HamPUG meetings from the meetup.com website.
+8. Refer to the files in the sub-directory /web2py/.
+
+***** Meetup: 32 *****
+
+url ID: 234493069
+Hamilton Python Meetup
+MS4.G.02
+2016-11-14 7PM
+William Mckee is talking about the Tesla Model S JSON API (http://docs.timdorr.apiary.io/) and the Vehicle Information Access API (https://www.w3.org/TR/vehicle-information-api/) - configuring and extending with Python.
+
+William will also talk about the Python micro-framework Flask (http://flask.pocoo.org/) for building websites and apps. He will cover the history, basics and extensions such as flask_restful/Flask-Security/flask-jsonify. Demo of how easy it is to get started. How to use it to bu
+
+================================================================================
+
+***** Meeting: 33 *****
+
+0. 2016-12-13
+1. 33
+2. Floating Point
+3. Lawrence D'Oliveiro delivered a presentation on Floating-Point∶ Beyond Standard Python.
+His presentation is an ipynb file in the sub-folder /ldo/.
+4. Click on the launch binder icon to launch his ipynb file in binder...
+5. 
+
+***** Meetup: 33 *****
+
+url ID: 234493075
+Hamilton Python Meetup
+MS4.G.02
+2016-12-12 7PM
+Lawrence D'Oliveiro has written a module https://github.com/ldo/pyfenv to give control to IEEE-754 exceptions and rounding from Python, which he will introduce.
+
+Do you remember in the 80s how we had video terminals that used escape sequences to draw rectangles, change colors, and enhance text with underline and reverse video etc.? In May 2016 Microsoft enabled support for this on their Windows 10 CMD and Powershell console windows. Ian Stewart (or Peter Reutemann) will demonstrate some Python c
+
+================================================================================
+
+***** Meeting: 34 *****
+
+0. 2017-02-13
+1. 34
+2. No presentation material uploaded.
+
+***** Meetup: 34 *****
+
+url ID: 236199923
+Hamilton Python Meetup
+The Cook Cafe and Bar
+2017-02-13 7PM
+Let's start the New Year with a social get together and meet at The Cook in Hamilton East. There we can talk about all things Python and the cool things that we got up to over the Xmas break!
+
+================================================================================
+
+***** Meeting: 35 *****
+
+0. 2017-03-13
+1. 35
+2. Python Intro Talk 1/2
+3. Lawrence D'Oliveiro
+4. Lawrence delivered an introduction into Python, showing off its succinct but easy to read syntax, using
+Jupyter Notebook.
+5. Django Web Framework
+6. Peter Reutemann
+7. Peter talked about developing web applications using the Django framework.
+
+***** Meetup: 35 *****
+
+url ID: 236199979
+Hamilton Python Meetup
+MS4.G.02
+2017-03-13 7PM
+Our March meeting is aimed at people new to Python and ones that would like to find out more about the language.
+
+Lawrence D'Oliveiro will give an introduction into Python, showing off its succinct but easy to read syntax, using
+Jupyter Notebook (http://jupyter.org/).
+
+Peter Reutemann will talk about developing web applications using the Django (https://www.djangoproject.com/) framework.
+
+Ian Stewart will demonstrate how to set up a website on pythonanywhere.com using the flask (http://flask.poc
+
+================================================================================
+
+***** Meeting: 36 *****
+
+0. 2017-04-10
+1. 36
+2. Pycuda Skcuda Cumpy and Matplotlib
+3. Chris
+4. Flask Web Framework
+5. Ian Stewart
+6. Python Intro Talk 2/2
+7. Lawrence D'Oliveiro
+
+***** Meetup: 36 *****
+
+url ID: 236199988
+Hamilton Python Meetup
+MS4.G.02
+2017-04-10 7PM
+Lawrence D'Oliveiro will continue with his introduction into Python, covering more advanced topics, once again using Jupyter Notebook (http://jupyter.org/).
+
+Ian Stewart will demonstrate how to set up a website on pythonanywhere.com using the flask (http://flask.pocoo.org/) framework.
+
+Chris O'Halloran will give a mini presentation on how to use Python in conjunction with Nvidia CUDA GPUs, to speed up processing of large datasets. Using pycuda and scikit-cuda, he will show how to: install the li
+
+================================================================================
+
+***** Meeting: 37 *****
+
+0. 2017-05-08
+1. 37
+2. No presentation uploaded
+
+***** Meetup: 37 *****
+
+url ID: 236200009
+Hamilton Python Meetup
+MS4.G.02
+2017-05-08 7PM
+Lawrence D’Oliveiro will talk about coroutines and asyncio in Python 3.5, including an introduction to decorator functions.
+
+Ian Stewart will make a LibreOffice Impress presentation talk!
+
+Ian Stewart will demo his bicycle speedometer. His demo includes a hall effect sensor module, a Raspberry Pi, use of the client/server programming model, use of python modules pydbus, RPi-GPIO, and GTK+, ...and a bicycle!
+
+William Mckee's talk has been moved to the July meetup (https://www.meetup.com/NZPUG-Ham
+
+================================================================================
+
+***** Meeting: 38 *****
+
+0. 2017-06-12
+1. 38
+2. Meeting held at The Cook Cafe and Bar.
+3. No presentation material uploaded
+
+***** Meetup: 38 *****
+
+url ID: 236200052
+Hamilton Python Meetup
+The Cook Cafe and Bar
+2017-06-12 7PM
+University is busy with exams, so let's just meet down the road at the pub. It's always great to have a chat with like minded people about what makes Python such a great programming language. This is a great opportunity if you are interested in Python but haven't had the chance to tinker with it yet.
+
+================================================================================
+
+***** Meeting: 39 *****
+
+0. 2017-07-10
+1. 39
+2. No presentation material uploaded
+
+***** Meetup: 39 *****
+
+url ID: 236200062
+Hamilton Python Meetup
+MS4.G.02
+2017-07-10 7PM
+William Mckee will talk about the fashion company Zalando (https://www.zalando.co.uk/) -, their API (https://api.zalando.com/) - and analyzing the data with the Natural Language Toolkit (http://www.nltk.org/).
+
+Are you working on a Python project at the moment or did you come across a nifty Python library? Then how about a little show and tell? It doesn't have to be a presentation, a simple hands-on demo will do. If that's the case, then please send Peter, the organizer, a little blurb and he'll
+
+================================================================================
+
+***** Meeting: 40 *****
+
+0. 2017-08-10
+1. 40
+2. Classes & Metaclasses
+3. Lawrence D'Oliveiro
+4. Lawrence delivered a presentation on Classes & Metaclasses
+5. Click on launch binder to have binders Jupyter server run Lawrence's python
+notebook presentation...
+6. 
+
+***** Meetup: 40 *****
+
+url ID: 236200072
+Hamilton Python Meetup
+MS4.G.02
+2017-08-14 7PM
+Lawrence D'Oliveiro will give an introduction into Python classes and the more esoteric aspects like meta-classes.
+
+Nathan Humphrey will show how you can use Python to process CSV files from the command-line.
+
+As a follow-on to the presentation William delivered last month on using API's to access data at the Zalando web-site, Ian Stewart will present the three API calls (http://docs.energyhiveapi.apiary.io/) that retrieve data from the energyhive (https://www.energyhive.com/) web-site.
+
+================================================================================
+
+***** Meeting: 41 *****
+
+0. 2017-09-11
+1. 41
+2. Interactive Data Visualization Using Matplotlib.
+3. Lawrence D'Oliveiro
+4. Lawrence delivered a Jupyter notebook presentation on Interactive Data
+Visualization Using Matplotlib.
+5. Click the launch binder icon to run Lawrence's ipynb presentation using the binder server...
+6. 
+
+***** Meetup: 41 *****
+
+url ID: 236200087
+Hamilton Python Meetup
+MS4.G.02
+2017-09-11 7PM
+Lawrence D'Oliveiro gives an introduction to database techniques and data visualization: importing data from CSV files into SQLite (https://sqlite.org/) and generating statistics and plots using Matplotlib (http://matplotlib.org/) and Seaborn (http://seaborn.pydata.org/).
+
+================================================================================
+
+***** Meeting: 42 *****
+
+0. 2017-10-09
+1. 42
+2. AsyncIO galore!
+3. Lawrence D'Oliveiro
+4. Lawrence presented on the AsynIO module.
+5. Ian Stewart
+6. Ian presentated a bicycle cadence program using the AsyncIO feature now available in Python3.
+
+***** Meetup: 42 *****
+
+url ID: 236200140
+Hamilton Python Meetup
+MS4.G.02
+2017-10-09 7PM
+asyncio (https://docs.python.org/3/library/asyncio.html) - Asynchronous I/O, event loop, coroutines and tasks in Python 3.5.
+
+Lawrence D'Oliveiro will give an intro to his wrapper for the GLib event loop and also explain the asyncio API a bit.
+
+Ian Stewart will first talk about how Cycle Analyst (http://www.ebikes.ca/product-info/cycle-analyst-3.html) is used to monitor and control an electric bike. It also broadcasts the status of the bike every second as a ttl async ascii record of 14 tab deli
+
+================================================================================
+
+***** Meeting: 43 *****
+
+0. 2017-11-13
+1. 43
+2. Meeting held at Homestead Bar and Eatery.
+3. No presentation material uploaded from this meeting.
+
+***** Meetup: 43 *****
+
+url ID: 236200286
+Hamilton Python Meetup
+Homestead Bar and Eatery
+2017-11-13 7PM
+It is the end of semester and university is busy with exams again. Let's just head down to the pub and discuss all things Python over a drink. This is a great opportunity to meet other Pythonistas or, if you are thinking about diving into Python, to get first hand information about using the programming language.
+
+================================================================================
+
+***** Meeting: 44 *****
+
+0. 2017-12-11
+1. 44
+2. No material uploaded from this meeting.
+
+***** Meetup: 44 *****
+
+url ID: 236200332
+Hamilton Python Meetup
+MS4.G.02
+2017-12-11 7PM
+Let's finish this year on a high, with William Mckee telling us about interesting talks that he came across at Kiwi PyCon (Dec 2/3 2017).
+
+================================================================================
+
+***** Meeting: 45 *****
+
+0. 2018-02-12
+1. 45
+2. Setuptools, Pypi and Mkdocs
+3. Peter Reutemann
+4. QtChart tutorial GUI demo
+5. Ian Stewart
+
+***** Meetup: 45 *****
+
+url ID: 246856247
+Hamilton Python Meetup
+TX3.G.01
+2018-02-12 7PM
+Having your Python projects on github.com is a good start, but a lot of people are not familiar with using git or don't want to install code/generate documentation from source.
+Peter Reutemann will show how to set up an installer for a Python library and how to deploy it to pypi.org, the central repository for Python libraries, making it available to everyone via "pip install". He will also demonstrate how you can use mkdocs (http://www.mkdocs.org/) to deploy beautiful documentation for your Pyt
+
+================================================================================
+
+***** Meeting: 46 *****
+
+0. 2018-03-12
+1. 46
+2. Introduction to Python
+3. Lawrence D'Oliveiro
+4. Lawrence delivered an Introduction to Python. His ipynb presentation
+file is located at /ldo/Introduction to Python.ipynb
+5. Click on the launch binder icon to run the ipynb file in Binder's Jupyter server
+6. 
+7. Installing Python on Windows
+8. Ian Stewart
+9. Ian delivered a presentation on Installing Python on Windows
+10. Refer to the README.md in the /ian/ folder for more details.
+
+***** Meetup: 46 *****
+
+url ID: 246856414
+Hamilton Python Meetup
+MS4.G.02
+2018-03-12 7PM
+Lawrence D'Oliveiro will give an introduction into Python, suited for beginners and very good refresher for intermediate users.
+
+Ian Stewart will talk you through installing Python on Windows 64bit for user interface development.
+Time permitting, Ian will provide an update on the progress of his python PyQt application designed to aid in the learning of how to write python code that generates Qt-Charts.
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 47 *****
+
+0. 2018-04-09
+1. 47
+2. Classes, Descriptors & Metaclasses
+3. Lawrence D'Oliveiro
+4. Lawrence delivered a presentation on Classes, Descriptors & Metaclasses
+5. His presentation ipynb file is available in the folder /ldo/
+6. Click on the launch binder icon to run the ipynb file in the binder Jupyter server
+7. 
+8. virtual environments
+9. Peter Reutemann
+10. Peter delivered a presentation on virtual environments with one objective
+being how not to stuff up your machine.
+11. Refer to the folder virtual_environments for the slide show for Peter's presentation.
+
+***** Meetup: 47 *****
+
+url ID: 246856479
+Hamilton Python Meetup
+MS4.G.02
+2018-04-09 7PM
+Lawrence D’Oliveiro will give an introduction to Python classes and the more esoteric aspects like descriptors and metaclasses.
+
+Peter Reutemann will show you how to use virtual environments, plain and with Anaconda.
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 48 *****
+
+0. 2018-05-14
+1. 48
+2. Install Jupyter Notebook on Windows and Linux
+3. Ian Stewart
+4. Ian provided a slide show presentation on how to install Jupyter notebook on
+both the Linux and Windows operating systems.
+5. HI slide show is available at /ian/Jupyter Notebook Install.odp
+6. Jupyter Notebook example
+7. Peter Reutemann
+8. Peter captured the demonstration of using Jupyter Notebook. The ipynb
+file is in /my_first_notebook/
+9. Click the launch binder icon to have binder provide a Jupyter server to run the ipynb file
+10. 
+11. Python Version - List Comprehension
+12. Ian Stewart
+13. Ian also provided a presentation on using List Comprehension to check the
+version of python that is being run.
+14. His slide show presetnation is /ian/Python Version Check.odp. It includes an
+appendix with an alternative approach supplied by Lawrence D'Oliveiro.
+
+***** Meetup: 48 *****
+
+url ID: 246856525
+Hamilton Python Meetup
+MS4.G.02
+2018-05-14 7PM
+Let's have a Jupyter Notebook (https://jupyter.org/) install fest. So bring your laptop to the meetup, we'll set you up and show you the basics!
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 49 *****
+
+0. 2018-06-11
+1. 49
+2. Flask / Docker
+3. Andreas Loef
+4. Andreas' presentation on his microservice Cowsay, built using
+Flask and deployable via Docker in the cloud.
+5. You can view the presentation, by opening presentation.html in your
+browser.
+6. Link to repos:
+7. 
+Talk
+Cowsay
+Cowbot
+
+
+***** Meetup: 49 *****
+
+url ID: 246856547
+Hamilton Python Meetup
+TX3.G.01
+2018-06-11 7PM
+Andreas Löf will give a gentle introduction to a microservice written in Python using the Flask framework. He will also show how to dockerise the microservice for testing in a production-like environment. Finally, Andreas will demonstrate the steps needed to deploy the microservice on Heroku as a Platform-as-a-Service (PaaS).
+
+We meet in TX3:
+https://www.waikato.ac.nz/contacts/map/?TX3
+
+================================================================================
+
+***** Meeting: 50 *****
+
+0. 2018-07-09
+1. 50
+2. Python Panda
+3. Gary Buczma
+4. Gary's Jupyter notebooks on his Python Pandas talk, to unlock and
+exploit the potential of unstructured data and open data, as a Data science
+tool.
+5. The data file can be downloaded from here.
+6. Click on the launch binder icon to launch Binder's Jupyter server to run the Demo.ipynb file...
+7. 
+8. Clic on the launch binder icon to launch Binder's Jupyter server to run the GeoPANDAS.ipynb file...
+9. 
+
+***** Meetup: 50 *****
+
+url ID: 246856561
+Hamilton Python Meetup
+MS4.G.02
+2018-07-09 7PM
+Gary Buczma will demo Python Pandas to unlock and exploit the potential of unstructured data and open data, as a Data science tool.
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 51 *****
+
+0. 2018-08-13
+1. 51
+2. Creating Api Bindings Using ctypes
+3. Lawrence D'Oliverio
+4. Lawrence delivered a presentation on creating api bindings using ctypes.
+5. Lawrence's presentation includes the Jupyter notebook ctypes example.ipnb.
+6. Click on the launch binder icon to run this ipynb file in the binder Jupyter server...
+7. 
+
+***** Meetup: 51 *****
+
+url ID: 246856596
+Hamilton Python Meetup
+MS4.G.02
+2018-08-13 7PM
+Creating Custom API Bindings Using ctypes - Lawrence D'Oliveiro will give an introduction to ctypes, and how to use it to create bindings for non-Python APIs using pure Python. And also why doing so is actually a good idea.
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 52 *****
+
+0. 2018-09-10
+1. 52
+2. WSGI with Waitress
+3. Peter Reutemann
+4. WSGI with waitress
+
+***** Meetup: 52 *****
+
+url ID: 246856780
+Hamilton Python Meetup
+MS4.G.02
+2018-09-10 7PM
+Peter Reutemann will show how to serve a Django application (https://www.djangoproject.com/) through the pure-Python WSGI server waitress (https://github.com/Pylons/waitress).
+waitress is an interesting and light-weight alternative to other WSGI capable servers like Apache/mod_wsgi, especially if you are only serving a single Python application.
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 53 *****
+
+0. 2018-10-08
+1. 53
+2. Web-Scraping
+3. Lawrence D’Oliveiro
+4. Lawrnce demonstrated a simple web-scraping task, namely automating the downloading of files from a 3D model archive site, using Python with the BeautifulSoup HTML-analysis library. This could be a useful introduction to those new to the concept of web-scraping.
+5. The files for this presentation are in the folder /ldo-web-scraping/
+6. Click on the launch binder icon to run Lawrence's ipynb file on the binder Jupyter server...
+7. 
+8. Intel Basic Speed Comparisons
+9. Peter Reutemann
+10. Intel claims that their custom Python distribution (https://software.seek.intel.com/python-distribution) delivers "close-to-native-code performance". Peter ran some basic speed comparisons to see whether it lives up to that claim.
+11. Refer to the files in the folder /intel_distro/
+12. Introduce Data Manipulation Using List Methods
+13. Ian Stewart
+14. The list() function to convert a string to an array of characters is complemented by a string's join() method. The list methods include append() and pop(0) which allow a list to be used as a fifo buffer. Ian gave a brief Jupyter Notebook presentation to introduce data manipulation using list methods.
+15. click the launch binder icon to run Ian's ipynb file in the binder Jupyter server...
+16. 
+
+***** Meetup: 53 *****
+
+url ID: 246856789
+Hamilton Python Meetup
+MS4.G.02
+2018-10-08 7PM
+Lawrence D’Oliveiro will demonstrate a simple web-scraping task, namely automating the downloading of files from a 3D model archive site, using Python with the BeautifulSoup HTML-analysis library. This could be a useful introduction to those new to the concept of web-scraping.
+
+Intel claims that their custom Python distribution (https://software.seek.intel.com/python-distribution) delivers "close-to-native-code performance". Peter Reutemann will run some basic speed comparisons to see whether it
+
+================================================================================
+
+***** Meeting: 54 *****
+
+0. 2018-11-12
+1. 54
+2. Meeting
+3. No presentation material from this meeting was uploaaded.
+
+***** Meetup: 54 *****
+
+url ID: 246856804
+Hamilton Python Meetup
+MS4.G.02
+2018-11-12 7PM
+Hacking EVs for dummies. Niall and Mark have been trying to take control of a Nissan Leaf's Battery Computer so that they can use it in other applications. They have had to learn a little CAN bus (Controller Area Network), a little Python and a little Raspberry Pi. They explain their progress so far and also where they hope to go with the project.
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 55 *****
+
+0. 2018-12-10
+1. 52
+2. Meeting
+3. No presentation material was uploaded.
+
+***** Meetup: 55 *****
+
+url ID: 246856818
+Hamilton Python Meetup
+MS4.G.02
+2018-12-10 7PM
+Have you come across a cool library or are you working on a project that you are passionate about? Would you like to give a short demo and/or presentation? Then please contact Peter the organizer.
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 56 *****
+
+0. 2019-02-11
+1. 56
+2. Web Framework - Django
+3. Sum Abiut
+4. Sum delivered a presentation on the Django Web Framework. His presentation included installation of Django and getting started by creating a simple web-site.
+5. The file django install and get start.pdf is a repeat of Sum's presentation, in which the console commands are captured and screen shots are included of what the web-browser displays.
+
+***** Meetup: 56 *****
+
+url ID: 257167593
+Hamilton Python Meetup
+MS4.G.02
+2019-02-11 7PM
+Sum Abiut will explain how Django, the Python framework for developing websites (https://www.djangoproject.com/), is structured and how to create a new website with it.
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 57 *****
+
+0. 2019-03-11
+1. 57
+2. Tensorflow
+3. Peter Reutemann
+4. Peter talked about using Tensorflow to detect burglars and pets
+5. Using ~/home/user/bin Directory
+6. Ian Stewart
+7. Ian showed how to manage your (executable) scripts from your (Linux) home directory
+
+***** Meetup: 57 *****
+
+url ID: 257167776
+Hamilton Python Meetup
+MS4.G.02
+2019-03-11 7PM
+Using a Raspberry Pi 3, wireless webcams and tensorflow, Peter Reutemann is attempting at building a pet monitor and burglar detection rig.
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 58 *****
+
+0. 2019-04-08
+1. 58
+2. Intro to Python
+3. Lawrence D'Oliveriro
+Lawrence delivered his Intro to Python presentation for 2019.
+4. Click the launch binder icon to run Lawrences presentation in binders Jupyter server...
+5. 
+
+***** Meetup: 58 *****
+
+url ID: 257167787
+Hamilton Python Meetup
+MS4.G.02
+2019-04-08 7PM
+Lawrence D'Oliveiro will give an introduction into Python, suited for beginners and very good refresher for intermediate users.
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 59 *****
+
+0. 2019-05-13
+1. 59
+2. Presentation on Creating a Website
+3. A static web-site, hosted on PythonAnywhere, with web-pages created using reStructuredText and the website generated by the Nikola application.
+4. Presenter: Ian Stewart
+5. The presention at the meeting held on 13 May 2019 covered the following:
+6. 
+Obtaining a reStructuredText (reST) editor.
+Using the editor to create reST web-pages.
+Creating a python virtual environment
+Installing Nikola static website generator application in the virtual environment.
+Using Nikola to convert the reST web-pages into html files and generate the website.
+Creating a free beginners account on PythonAnywhere
+Uploading the web-site to the PythonAnywhere account.
+
+7. In a somewhat recursive scenario, the presentation that Ian delivered is captured  in a website that he created. Please review the website http://hampug1.pythonanywhere.com
+8. As part of the presentation Ian performed many linux bash commands to create the basic template for the web-site he built. These commands are attached as the file presentation_history.  You can replace your ~/.bash_history file with this presentation_history file. By recalling your bash history in sequence with the bash history commands, !1, !2, !3, etc., you may repeat the delivery in the presentation and create your own template web-site. You may then modify the template to build your own web-site. As part of the presentation a modified Nikola conf.py file is used called conf_quiet.py. Please find this file in this repository and place it in your home folder. The conf_quiet.py file is the conf.py file with edits in four places. Search with the string Edited by Ian to see what the editing involved.
+9. Attached are the files:
+10. 
+presentation_history
+conf_quiet.py
+
+11. The presentation_history file is installed on your linux laptop computer as follows:
+12. 
+
+Place the presentation_history file into your home folder. I.e. Your ~/ folder.
+
+
+Open one console terminal window on your laptop.
+
+
+Check that you have .bash_history file.  $ ls -l .bash_history
+
+
+Make a backup: $ cp .bash_history bash_history_backup_$(date '+%Y%m%d-%H%M%S')
+
+
+Overwrite the bash_history: $ cp presentation_history .bash_history
+
+
+Clear history currently in memory:  $ history -c
+
+
+Close the console terminal window.
+
+
+Open a console terminal window.  The history for this terminal will now contain the bash commands to learn about Nikola and create a template web-site. Execute the commands sequencially using the history recall as follows: $ !1 then $ !2  then $ !3 etc.
+
+
+
+***** Meetup: 59 *****
+
+url ID: 257167798
+Hamilton Python Meetup
+MS4.G.02
+2019-05-13 7PM
+Ian Stewart will present on how he created the web-site http://hampug1.pythonanywhere.com
+
+The web-site is a presentation on how to create a web-site and covers:
+1. Using ReText, the reStructuredText editor.
+2. Creating reST web-pages.
+3. Using Nikola to build a static website from the web-pages
+4. Deploy and host the website at http://hampug1.pythonanywhere.com
+
+We follow the NZPUG code of conduct to create an inclusive, friendly environment. https://python.nz/Page/42341
+
+We meet in MS4:
+https:
+
+================================================================================
+
+***** Meeting: 60 *****
+
+0. 2019-06-10
+1. 60
+2. ETL - Extract, Transform, Load
+3. Peter Reutemann presented and Overview of available ETL frameworks:
+4. https://blog.panoply.io/top-9-python-etl-tools-and-when-to-use-them
+5. Further list from petl:
+6. https://petl.readthedocs.io/en/stable/related_work.html
+7. Covered in the presentation:
+8. 
+pandas
+bonobo
+bubbles
+petl
+
+9. Execution times (in seconds)
+10. 
+pandas: 92.8
+bonobo: N/A
+bubbles: 87.1 (though without additional columns)
+petl: 281.1
+
+11. Line Drawing with Linux
+12. Ian Stewart demoed some development python code to play on-line radio stations.
+This code has a retro look and the User interacts with a console terminal
+window. Ian also introduced the curses module that provides console terminal
+line drawing. A ipynb presentation highlights the line drawing sets that Liinux supports.
+13. Click the launch binder icon to run the ipynb file in Binders Jupyter server.
+14. 
+
+***** Meetup: 60 *****
+
+url ID: 257167804
+Hamilton Python Meetup
+MS4.G.02
+2019-07-08 7PM
+Peter Reutemann will briefly talk about Typing hints, introduced with Python 3.6, and also talk about different kernels for Jupyter Notebooks.
+
+We follow the NZPUG code of conduct to create an inclusive, friendly environment. https://python.nz/Page/42341
+
+We meet in MS4:
+https://www.waikato.ac.nz/contacts/map/?MS4
+
+================================================================================
+
+***** Meeting: 61 *****
+
+0. 2019-07-08
+1. 61
+2. 
+PEP484 - Type hinting
+Jupyter Kernels (Thanks to Ian Stewart)
+....
+Click on the launch binder icon to run the ipynb file in the binder Jupyter server...
+
+3. 
+
+***** Meetup: 61 *****
+
+url ID: 257167871
+Hamilton Python Meetup
+TX3.G.01
+2019-06-10 7PM
+Peter Reutemann will present some libraries/frameworks that can assist with ETL (extract, transform, load). ETL is a process for copying from one or more sources to a destination that represents the data differently, often used in Data Warehousing (https://en.wikipedia.org/wiki/Extract,_transform,_load).
+
+We follow the NZPUG code of conduct to create an inclusive, friendly environment. https://python.nz/Page/42341
+
+We meet in TX3:
+https://www.waikato.ac.nz/contacts/map/?TX3
+
+================================================================================
+
+***** Meeting: 62 *****
+
+0. 2019-08-12
+1. 62
+2. Lawrence D'Oliveiro
+3. Lawrence presented on the latest version of Blender.
+
+***** Meetup: 62 *****
+
+url ID: 257167812
+Hamilton Python Meetup
+MS4.G.02
+2019-08-12 7PM
+Blender (https://www.blender.org/) is an amazing piece of Free Software that covers all the major aspects of the production of computer graphics in a single compact package. It also integrates an extensive Python scripting API. Lawrence D'Oliveiro will demonstrate the Python API, along with an overview of the many ways it can be used to extend the power of Blender.
+
+We follow the NZPUG code of conduct to create an inclusive, friendly environment. https://python.nz/Page/42341
+
+We meet in MS4:
+htt
+
+================================================================================
